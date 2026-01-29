@@ -4,12 +4,7 @@
             "arm64"
         ],
         "iphonesimulator": [
-            "arm64",
-            "x86_64"
-        ],
-        "macosx": [
-            "arm64",
-            "x86_64"
+            "arm64"
         ]
     },
     "build_params": {
@@ -20,7 +15,8 @@
             "--use_coreml",
             "--use_xnnpack",
             "--skip_tests",
-            "--cmake_extra_defines=onnxruntime_BUILD_UNIT_TESTS=OFF"
+            "--cmake_extra_defines=onnxruntime_BUILD_UNIT_TESTS=OFF",
+            "--cmake_extra_defines=CMAKE_POLICY_VERSION_MINIMUM=3.5"
         ],
         "macosx": [
             "--macos=MacOSX",
